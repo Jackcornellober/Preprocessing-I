@@ -131,6 +131,9 @@ table {
 * {
   box-sizing: border-box;
 }
+.flexify {
+  display: flex;
+}
 html,
 body {
   height: 100%;

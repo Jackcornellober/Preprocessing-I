@@ -55,6 +55,10 @@ table {
 }
 @jack-grey: #282828;
 
+.flexify {
+	display: flex;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -90,7 +94,7 @@ img {
 	display: block;
 }
 .contactList {
-	display: flex;
+	.flexify();
 	flex-direction: column;
 	
 	li {
@@ -108,7 +112,7 @@ img {
 }
 
 nav {
-	display: flex;
+	.flexify();
 	justify-content: space-between;
 	width: 80%;
 	margin-bottom: 3rem;
@@ -146,11 +150,10 @@ section {
 	.bm4();
 }
 .skills {
-	display: flex;
+	.flexify();
 	justify-content: space-between;
 	div {
 		width: 40%;
-	}
 	li {
 		padding-bottom: 1rem;
 		border: solid @jack-grey 1px;

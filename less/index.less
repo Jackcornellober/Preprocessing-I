@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: red;
+	display: flex;
 }
 ol, ul {
 	list-style: none;
@@ -53,8 +53,128 @@ table {
 * {
     box-sizing: border-box;
 }
+@jack-grey: #282828;
 
 html, body {
-    height: 100%;
+	height: 100%;
+	width: 100%;
+	max-width: 1000px;
+	font-family: "helvetica";
+	color: @jack-grey;
+}
+.leftSide {
+	width: 33.3%;
+	height: 100%;
+	background: @jack-grey;
+	color: white;
+	@media screen and (max-width: 500px) {
+		display:none;
+	}
+}
+.rightSide {
+	width: 66.6%;
+	height: 100%;
+	padding-left: 3rem;
+	@media screen and (max-width: 500px) {
+		width: 100%;
+	}
+}
+img {
+	width: 75%;
+	height: 25%;
+	border-radius: 50%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.contactList {
+	display: flex;
+	flex-direction: column;
+	
+	li {
+		margin-bottom: 1rem;
+		margin-left: 4rem;
+		h2 {
+			font-size: 1.3rem;
+		}
+	}
+	.homeAddress {
+		line-height: 1;
+		margin-bottom: 0;
+		
+	}
 }
 
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+	a {
+		text-decoration: none;
+	}
+}
+.topNav {
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+}
+.botNav {
+	margin-bottom: 2rem;
+	margin-top: 5rem;
+}
+h1 {
+	font-size: 5rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+h3 {
+	font-size: 1.35rem;
+	margin-bottom: 4rem;
+	margin-top: .7rem;
+}
+.bm4 {
+	margin-bottom: 4rem;
+}
+section {
+	.bm4();
+}
+.skills {
+	display: flex;
+	justify-content: space-between;
+	div {
+		width: 40%;
+	}
+	li {
+		padding-bottom: 1rem;
+		border: solid @jack-grey 1px;
+		padding-top: 1rem;
+		padding-left: 1rem;
+	}
+	.skillsHead {
+		border: none;
+		padding-left: 0;
+		font-weight: bold;
+		font-size: 1.7rem;
+	}
+	@media screen and (max-width: 800px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+td {
+	padding: 1rem 0;
+	padding-left: .5rem;
+}
+.greyBackground {
+	background: lightgrey;
+}
+.tr1 {
+	font-weight: bold;
+}

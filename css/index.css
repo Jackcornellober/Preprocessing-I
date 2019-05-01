@@ -106,7 +106,7 @@ section {
 }
 body {
   line-height: 1;
-  background-color: red;
+  display: flex;
 }
 ol,
 ul {
@@ -134,4 +134,127 @@ table {
 html,
 body {
   height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  font-family: "helvetica";
+  color: #282828;
+}
+.leftSide {
+  width: 33.3%;
+  height: 100%;
+  background: #282828;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .leftSide {
+    display: none;
+  }
+}
+.rightSide {
+  width: 66.6%;
+  height: 100%;
+  padding-left: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .rightSide {
+    width: 100%;
+  }
+}
+img {
+  width: 75%;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+}
+.contactList li {
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+}
+.contactList li h2 {
+  font-size: 1.3rem;
+}
+.contactList .homeAddress {
+  line-height: 1;
+  margin-bottom: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+nav a {
+  text-decoration: none;
+}
+.topNav {
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.botNav {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 4rem;
+  margin-top: 0.7rem;
+}
+.bm4 {
+  margin-bottom: 4rem;
+}
+section {
+  margin-bottom: 4rem;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+.skills div {
+  width: 40%;
+}
+.skills li {
+  padding-bottom: 1rem;
+  border: solid #282828 1px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.skills .skillsHead {
+  border: none;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 800px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+td {
+  padding: 1rem 0;
+  padding-left: 0.5rem;
+}
+.greyBackground {
+  background: lightgrey;
+}
+.tr1 {
+  font-weight: bold;
 }

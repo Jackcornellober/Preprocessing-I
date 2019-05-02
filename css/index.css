@@ -1,1 +1,263 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  display: flex;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flexify {
+  display: flex;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  font-family: "helvetica";
+  color: #282828;
+}
+.leftSide {
+  width: 33.3%;
+  height: 100%;
+  background: #282828;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .leftSide {
+    display: none;
+  }
+}
+.rightSide {
+  width: 66.6%;
+  height: 100%;
+  padding-left: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .rightSide {
+    width: 100%;
+  }
+}
+img {
+  width: 75%;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+}
+.contactList li {
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+}
+.contactList li h2 {
+  font-size: 1.3rem;
+}
+.contactList .homeAddress {
+  line-height: 1;
+  margin-bottom: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+nav a {
+  text-decoration: none;
+}
+.topNav {
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.botNav {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 4rem;
+  margin-top: 0.7rem;
+}
+.bm4 {
+  margin-bottom: 4rem;
+}
+section {
+  margin-bottom: 4rem;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+.skills div {
+  width: 40%;
+}
+.skills li {
+  padding-bottom: 1rem;
+  border: solid #282828 1px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.skills .skillsHead {
+  border: none;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 800px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+td {
+  padding: 1rem 0;
+  padding-left: 0.5rem;
+}
+.greyBackground {
+  background: lightgrey;
+}
+.tr1 {
+  font-weight: bold;
+}
